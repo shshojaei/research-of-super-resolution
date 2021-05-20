@@ -1,4 +1,9 @@
 # Image-Restoration-using-SRCNN
+
+code: https://github.com/kunal-visoulia/Image-Restoration-using-SRCNN#:~:text=The%20SRCNN%20is%20a%20deep,resolution%20to%20high%20resolution%20images.&text=To%20evaluate%20the%20performance%20of,squared%20error%20(MSE)%2C%20and
+
+medium : https://medium.com/coinmonks/review-srcnn-super-resolution-3cb3a4f67a7c
+
 Deploying the super-resolution convolution neural network (SRCNN) using Keras
 
 This network was published in the paper, "Image Super-Resolution Using Deep Convolutional Networks" by Chao Dong, et al. in 2014. 
