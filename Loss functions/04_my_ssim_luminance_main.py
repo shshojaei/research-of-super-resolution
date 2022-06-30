@@ -27,6 +27,6 @@ def my_ssim_luminance_main(y_true, y_pred):
   ssim_map = (2 * mu_1_mu_2 + c_1) / (mu_1_sq + mu_2_sq + c_1)
 
   # return MSSIM
-  index = K.mean(ssim_map)
+  index = 1 - K.mean(ssim_map)
 
   return index
