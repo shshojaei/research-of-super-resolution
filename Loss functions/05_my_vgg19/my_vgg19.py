@@ -9,7 +9,7 @@ import keras.backend as K
 #              "block4_conv1","block4_conv2","block4_conv3","block4_conv4",
 #              "block5_conv1","block5_conv2","block5_conv3","block5_conv4"]
 
-layer_name = "block4_conv1"
+layer_name = "block2_conv2"
 
 vgg = VGG19(weights='imagenet', include_top=False)
 vgg.trainable = False
