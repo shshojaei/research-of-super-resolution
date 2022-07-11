@@ -1,10 +1,16 @@
 from tensorflow.keras.models import Model
 import keras.backend as K
 
-resnet = ResNet50(include_top=False, weights=None, pooling='avg')
-outputs = layers.Dense(128, activation=None)(resnet.output) # No activation on final dense layer
+layer_name = "pool1_pool"
 
-model_resnet = Model(resnet.input,outputs)
+resnet = ResNet50(include_top=False, weights=None, pooling='avg')
+resnet.trainable = False
+output = resnet.get_layer(layer_name).output
+model_resnet = Model(resnet.input, output)
+
+#outputs = layers.Dense(128, activation=None)(resnet.output) # No activation on final dense layer
+
+#model_resnet = Model(resnet.input,outputs)
 
 @tf.function
 def perceptual_resnet_loss(y_true , y_pred):
