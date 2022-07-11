@@ -8,10 +8,6 @@ resnet.trainable = False
 output = resnet.get_layer(layer_name).output
 model_resnet = Model(resnet.input, output)
 
-#outputs = layers.Dense(128, activation=None)(resnet.output) # No activation on final dense layer
-
-#model_resnet = Model(resnet.input,outputs)
-
 @tf.function
 def perceptual_resnet_loss(y_true , y_pred):
     y_true = model_resnet(y_true)
