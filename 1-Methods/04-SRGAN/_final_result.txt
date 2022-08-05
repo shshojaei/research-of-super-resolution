@@ -1,0 +1,23 @@
+For Set5:
+
+(article)PSNR - 29.40
+(code)PSNR - 25.859
+
+(article)SSIM - 0.901
+(code)SSIM - 0.812
+
+For Set14:
+
+(article)PSNR - 26.02
+(code)PSNR - 24.430
+
+(article)SSIM - 0.739
+(code)SSIM - 0.721
+
+For BSDS100:
+
+(article)PSNR - 25.16
+(code)PSNR - 24.284
+
+(article)SSIM - 0.668
+(code)SSIM - 0.689
