@@ -22,7 +22,3 @@ newimage=imresize(image,0.5);
 %save new image
 imwrite(newimage,[output_path image_name])
 end
-
-
-
-
