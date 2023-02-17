@@ -2,3 +2,5 @@ article: [_Enhanced Deep Residual Networks for Single Image Super-Resolution (ED
 
 
 Source code from: https://keras.io/examples/vision/edsr/
+
+just some modifications were added.
