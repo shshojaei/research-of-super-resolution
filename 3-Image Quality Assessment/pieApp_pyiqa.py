@@ -1,4 +1,4 @@
-!pip install pyiqa
+#pip install pyiqa
 
 import pyiqa
 import torch
