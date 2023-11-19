@@ -23,7 +23,7 @@ def my_vgg(y_true , y_pred):
     y_true = model_vgg(y_true)
     y_pred = model_vgg(y_pred)
 
-    y_true = K.flatten(y_true)
-    y_pred = K.flatten(y_pred)
+    #y_true = K.flatten(y_true)
+    #y_pred = K.flatten(y_pred)
 
     return K.mean(K.square(y_pred - y_true), axis=-1)
