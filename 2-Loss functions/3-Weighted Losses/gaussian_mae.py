@@ -1,3 +1,5 @@
+!pip install tensorflow-addons
+
 import tensorflow_addons as tfa
 import keras.backend as K
 
