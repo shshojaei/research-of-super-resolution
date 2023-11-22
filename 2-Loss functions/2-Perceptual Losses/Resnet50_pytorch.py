@@ -20,4 +20,17 @@ def perceptual_loss(y_true, y_pred):
   y_true_features = resnet50_model(y_true)
   y_pred_features = resnet50_model(y_pred)
   return torch.mean(torch.abs(y_true_features - y_pred_features))
+
+
+###### Train part of ESRT code(https://github.com/luissen/ESRT) ######
+
+print("===> Setting GPU")
+if cuda:
+    model = model.to(device)
+    l1_criterion = l1_criterion.to(device)
+    perceptual_criterion = perceptual_loss
+
+# . . . #
+
+loss_perceptual = perceptual_criterion(sr_tensor, hr_tensor)
   
