@@ -41,3 +41,11 @@ def dct_q_loss(y_true, y_pred):
     loss.cuda()
 
   return loss
+
+###### Train part of ESRT code(https://github.com/luissen/ESRT) ######
+
+dct_q_criterion = nn.L1loss()
+
+# . . . #
+
+loss_dct = dct_q_criterion(sr_tensor, hr_tensor)
