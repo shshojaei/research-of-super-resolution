@@ -46,6 +46,11 @@ def dct_q_loss(y_true, y_pred):
 
 dct_q_criterion = nn.L1loss()
 
+if cuda:
+    model = model.to(device)
+    #l1_criterion = l1_criterion.to(device)
+    dct_q_criterion = dct_q_loss
+
 # . . . #
 
 loss_dct = dct_q_criterion(sr_tensor, hr_tensor)
